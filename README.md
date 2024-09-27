@@ -6,6 +6,8 @@ Welcome to the **Micromouse Maze Solver**! This repository contains the code and
 
 This project was developed as part of my participation in the **IEEE Victories 3.0 Micromouse Competition**, organized by the **IEEE Mansoura Branch** and powered by the **National Telecom Regulatory Authority (NTRA)**. The Micromouse competition challenges small, autonomous robots to navigate through a maze as quickly as possible, using sensors, motor drivers, and efficient algorithms.
 
+I used the **[mackorone/mms](https://github.com/mackorone/mms)** simulator available on GitHub to run and test the flood fill algorithm during development.
+
 ### Features
 - **Flood Fill Algorithm**: A recursive algorithm that explores and solves mazes by systematically visiting and marking cells.
 - **MCAL Drivers**: Includes **DIO (Digital I/O)**, **PWM**, and a custom **TWI (Two-Wire Interface)** driver for communication.
@@ -107,6 +109,3 @@ For more details, refer to the [`floodFill`](./path/to/floodFill) function.
 - **Improved Sensor Fusion**: Enhancing accuracy by fusing data from multiple sensors (IR, ultrasonic, and gyroscope).
 - **Hardware Optimization**: Further improving motor control and sensor accuracy for real-world performance.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
