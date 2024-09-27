@@ -68,41 +68,6 @@ For more details, refer to the [`floodFill`](./path/to/floodFill) function.
 - **STD_TYPES.h**: Defines common standard types like `u8`, `s16`, and `u32` to ensure consistency across the codebase.
 
 
-## File Structure
-
-```
-├── src
-│   ├── main.c           # Entry point for the Micromouse algorithm
-│   ├── floodFill.c      # Core flood fill algorithm
-│   ├── drivers          # Contains all the MCAL and HAL drivers
-│   │   ├── dio.c        # DIO driver
-│   │   ├── pwm.c        # PWM driver
-│   │   ├── twi.c        # TWI driver
-│   │   ├── ir_sensor.c  # IR sensor driver
-│   │   ├── ultrasonic.c # Ultrasonic sensor driver
-│   │   ├── motor.c      # Motor driver
-│   │   ├── encoder.c    # Encoder driver
-│   │   ├── gyroscope.c  # Gyroscope driver
-├── include
-│   ├── api.h            # API function declarations
-│   ├── floodFill.h      # Flood fill function declarations
-│   ├── drivers          # Header files for drivers
-│   │   ├── dio.h
-│   │   ├── pwm.h
-│   │   ├── twi.h
-│   │   ├── ir_sensor.h
-│   │   ├── ultrasonic.h
-│   │   ├── motor.h
-│   │   ├── encoder.h
-│   │   ├── gyroscope.h
-├── libs
-│   ├── BIT_MATH.h       # Bit manipulation utilities
-│   ├── STD_TYPES.h      # Standard types for consistency
-├── README.md            # Project overview (you are here)
-├── Makefile             # Build instructions
-└── LICENSE              # License for the project
-```
-
 ## Future Enhancements
 
 - **Additional Algorithms**: Implementing A* or Dijkstra algorithms for faster maze-solving.
