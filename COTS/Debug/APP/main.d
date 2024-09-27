@@ -1,4 +1,14 @@
-APP/main.o APP/main.o: ../APP/main.c \
-  ../APP/../HAL/Ultrasonic-Sensor/Ultrasonic_int.h
+APP/main.o APP/main.o: ../APP/main.c ../APP/../LIB/STD_TYPES.h \
+  ../APP/../LIB/BIT_MATH.h ../APP/../MCAL/PWM/PWM.h \
+  ../APP/../HAL/Motor-Driver/Motor_Driver.h \
+  ../APP/../HAL/Encoder/Encoder.h
 
-../APP/../HAL/Ultrasonic-Sensor/Ultrasonic_int.h:
+../APP/../LIB/STD_TYPES.h:
+
+../APP/../LIB/BIT_MATH.h:
+
+../APP/../MCAL/PWM/PWM.h:
+
+../APP/../HAL/Motor-Driver/Motor_Driver.h:
+
+../APP/../HAL/Encoder/Encoder.h:

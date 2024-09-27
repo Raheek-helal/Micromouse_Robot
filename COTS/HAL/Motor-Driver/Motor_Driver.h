@@ -34,11 +34,11 @@
 // Motor control functions
 void motors_init(void);
 
-void set_motor_speed(uint16_t  speed, uint8_t motor);
+void set_motor_speed(uint16_t  speed/*, uint8_t motor*/);
 
 void set_motor_direction(uint8_t direction, uint8_t motor);
 
-void move_both_motors(uint16_t  speedA, uint16_t  speedB, uint8_t directionA, uint8_t directionB);
+void move_both_motors(/*uint16_t  speedA, uint16_t  speedB*/uint16_t  speed, uint8_t directionA, uint8_t directionB);
 
 void stop_both_motors(void);
 

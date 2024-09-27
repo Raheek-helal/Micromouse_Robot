@@ -111,7 +111,7 @@ int16_t read_gyroscope_data(uint8_t axis) {
 #include "Gyroscope.h"
 #include "../../MCAL/TWI/TWI_int.h"
 
-#define GYRO_ADDRESS 0x69
+#define GYRO_ADDRESS 0x68
 
 void gyroscope_init()
 {

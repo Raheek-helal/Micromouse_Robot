@@ -33,8 +33,8 @@ int main() {
             PORTB &= ~(1 << PB0); // Clear PB0
             PORTB |= (1 << PB1);  // Set PB1
         } else {
-            PORTB |= (1 << PB0);  // Set PB0
-            PORTB |= (1 << PB1);  // Set PB1
+            PORTB &= ~(1 << PB0); // Clear PB0
+        	PORTB &= ~(1 << PB1); // Clear PB1
         }
 
         _delay_ms(100); // Add a delay before the next read

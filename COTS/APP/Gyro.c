@@ -161,3 +161,44 @@ int main() {
     return 0;
 }
  */
+
+
+
+/*
+#include <avr/io.h>
+#include <util/delay.h>
+#include "../HAL/Gyroscope/Gyroscope.h"
+
+int main() {
+    int16_t gyro_x, gyro_y;
+
+    // Set PB0 and PB1 as output pins
+    DDRB |= (1 << PB0) | (1 << PB1);
+
+    gyroscope_init(); // Initialize the gyroscope
+
+    while (1) {
+        // Read gyroscope data for X and Y axes
+        gyro_x = read_gyroscope_data(0x01); // Read X-axis
+        gyro_y = read_gyroscope_data(0x02); // Read Y-axis
+
+        // Control LED connected to PB0 based on gyro_x
+        if (gyro_x > 1000) {
+            PORTB |= (1 << PB0); // Turn on LED on PB0
+        } else {
+            PORTB &= ~(1 << PB0); // Turn off LED on PB0
+        }
+
+        // Control LED connected to PB1 based on gyro_y
+        if (gyro_y < -1000) {
+            PORTB |= (1 << PB1); // Turn on LED on PB1
+        } else {
+            PORTB &= ~(1 << PB1); // Turn off LED on PB1
+        }
+
+        _delay_ms(100); // Delay for responsiveness
+    }
+
+    return 0;
+}
+*/

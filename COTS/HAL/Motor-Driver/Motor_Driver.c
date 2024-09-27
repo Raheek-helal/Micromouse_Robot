@@ -16,10 +16,10 @@
 void motors_init()
 {
     // Initialize motor control pins as output on PORTC
-    //DIO_vSetPinDir(CONTROL_PORT, MOTOR_A_ENABLE_PIN, DIO_OUTPUT);
+    DIO_vSetPinDir(CONTROL_PORT, MOTOR_A_ENABLE_PIN, DIO_OUTPUT);
     DIO_vSetPinDir(CONTROL_PORT, MOTOR_A_IN1_PIN, DIO_OUTPUT);
     DIO_vSetPinDir(CONTROL_PORT, MOTOR_A_IN2_PIN, DIO_OUTPUT);
-    //DIO_vSetPinDir(CONTROL_PORT, MOTOR_B_ENABLE_PIN, DIO_OUTPUT);
+    DIO_vSetPinDir(CONTROL_PORT, MOTOR_B_ENABLE_PIN, DIO_OUTPUT);
     DIO_vSetPinDir(CONTROL_PORT, MOTOR_B_IN1_PIN, DIO_OUTPUT);
     DIO_vSetPinDir(CONTROL_PORT, MOTOR_B_IN2_PIN, DIO_OUTPUT);
 
@@ -32,8 +32,9 @@ void motors_init()
     pwm_init();
 }
 
-void set_motor_speed(uint16_t speed, uint8_t motor)
+void set_motor_speed(uint16_t speed/*, uint8_t motor*/)
 {
+	/*
     // Set the speed of the specified motor using PWM
 	if (motor == MOTOR_A)
 	{
@@ -42,7 +43,8 @@ void set_motor_speed(uint16_t speed, uint8_t motor)
 	else if (motor == MOTOR_B)
 	{
 		set_pwm_duty_cycle(pwm_B, speed); // Set PWM duty cycle for Motor B
-	}
+	}*/
+	set_pwm_duty_cycle(/*pwm_A,*/ speed);
 
 }
 
@@ -94,24 +96,26 @@ void set_motor_direction(uint8_t direction, uint8_t motor)
 	    }
 }
 
-void move_both_motors(uint16_t  speedA, uint16_t  speedB, uint8_t directionA, uint8_t directionB)
+void move_both_motors(/*int16_t  speedA, uint16_t  speedB*/uint16_t  speed, uint8_t directionA, uint8_t directionB)
 {
 	//Enable the motors
-	DIO_vSetPinVal( PORTD, DDD5, DIO_HIGH);
-	DIO_vSetPinVal(PORTD, DDD4, DIO_HIGH);
+	//DIO_vSetPinVal( PORTD, DDD5, DIO_HIGH);
+	//DIO_vSetPinVal(PORTD, DDD4, DIO_HIGH);
+	DIO_vSetPinVal( CONTROL_PORT, MOTOR_A_ENABLE_PIN, DIO_HIGH);
+	DIO_vSetPinVal(CONTROL_PORT, MOTOR_B_ENABLE_PIN, DIO_HIGH);
 
     // Set speed and direction for both motors
-    set_motor_speed(speedA, MOTOR_A);
-    set_motor_speed(speedB, MOTOR_B);
+    //set_motor_speed(speedA, MOTOR_A);
+    //set_motor_speed(speedB, MOTOR_B);
+	set_motor_speed(speed);
     set_motor_direction(directionA, MOTOR_A);
     set_motor_direction(directionB, MOTOR_B);
 }
 
 void stop_both_motors()
 {
-    // Stop both motors on PORTC
-	//CLR_BIT(CONTROL_PORT, MOTOR_A_ENABLE_PIN);
-	//CLR_BIT(CONTROL_PORT, MOTOR_B_ENABLE_PIN);
-	PORTC &= ~((1 << PC5) | (1 << PC6));
+	    // Stop both motors by setting the enable pins to LOW
+	    DIO_vSetPinVal(CONTROL_PORT, MOTOR_A_ENABLE_PIN, DIO_LOW);
+	    DIO_vSetPinVal(CONTROL_PORT, MOTOR_B_ENABLE_PIN, DIO_LOW);
 }
 

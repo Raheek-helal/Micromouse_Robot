@@ -12,6 +12,6 @@
 #define pwm_B  1
 
 void pwm_init();
-void set_pwm_duty_cycle(uint8_t channel, uint16_t speed);
+void set_pwm_duty_cycle(/*uint8_t channel,*/ uint16_t speed);
 
 #endif /* MCAL_PWM_PWM_H_ */

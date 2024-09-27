@@ -1,5 +1,7 @@
 Archive member included because of file (symbol)
 
+c:/users/acer/desktop/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+                              ./MCAL/PWM/PWM.o (__udivmodhi4)
 c:/users/acer/desktop/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
                               ./HAL/Ultrasonic-Sensor/Ultrasonic.o (__udivmodsi4)
 c:/users/acer/desktop/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
@@ -175,7 +177,7 @@ LOAD c:/users/acer/desktop/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\l
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000     0x22b6
+.text           0x00000000     0x2498
  *(.vectors)
  .vectors       0x00000000       0x54 c:/users/acer/desktop/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
                 0x00000000                __vectors
@@ -263,6 +265,7 @@ LOAD c:/users/acer/desktop/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\l
  .text          0x00000092        0x0 ./APP/Gyro.o
  .text          0x00000092        0x0 ./APP/Ultra.o
  .text          0x00000092        0x0 ./APP/main.o
+ .text          0x00000092        0x0 c:/users/acer/desktop/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
  .text          0x00000092        0x0 c:/users/acer/desktop/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
  .text          0x00000092        0x0 c:/users/acer/desktop/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
  .text          0x00000092        0x0 c:/users/acer/desktop/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
@@ -327,102 +330,104 @@ LOAD c:/users/acer/desktop/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\l
                 0x00000e3a       0x16 ./MCAL/TWI/TWI_prg.o
                 0x00000e3a                MTWI_u8GetStatus
  .text.pwm_init
-                0x00000e50       0x44 ./MCAL/PWM/PWM.o
+                0x00000e50       0xa0 ./MCAL/PWM/PWM.o
                 0x00000e50                pwm_init
  .text.set_pwm_duty_cycle
-                0x00000e94       0x4c ./MCAL/PWM/PWM.o
-                0x00000e94                set_pwm_duty_cycle
+                0x00000ef0       0x6e ./MCAL/PWM/PWM.o
+                0x00000ef0                set_pwm_duty_cycle
  .text.DIO_vSetPinDir
-                0x00000ee0      0x200 ./MCAL/DIO/DIO_prg.o
-                0x00000ee0                DIO_vSetPinDir
+                0x00000f5e      0x200 ./MCAL/DIO/DIO_prg.o
+                0x00000f5e                DIO_vSetPinDir
  .text.DIO_vSetPinVal
-                0x000010e0      0x200 ./MCAL/DIO/DIO_prg.o
-                0x000010e0                DIO_vSetPinVal
+                0x0000115e      0x200 ./MCAL/DIO/DIO_prg.o
+                0x0000115e                DIO_vSetPinVal
  .text.DIO_u8GetPinVal
-                0x000012e0       0xf4 ./MCAL/DIO/DIO_prg.o
-                0x000012e0                DIO_u8GetPinVal
+                0x0000135e       0xf4 ./MCAL/DIO/DIO_prg.o
+                0x0000135e                DIO_u8GetPinVal
  .text.DIO_vSetPortDir
-                0x000013d4       0x82 ./MCAL/DIO/DIO_prg.o
-                0x000013d4                DIO_vSetPortDir
+                0x00001452       0x82 ./MCAL/DIO/DIO_prg.o
+                0x00001452                DIO_vSetPortDir
  .text.DIO_vSetPortVal
-                0x00001456       0x82 ./MCAL/DIO/DIO_prg.o
-                0x00001456                DIO_vSetPortVal
+                0x000014d4       0x82 ./MCAL/DIO/DIO_prg.o
+                0x000014d4                DIO_vSetPortVal
  .text.DIO_GetPortVal
-                0x000014d8       0x84 ./MCAL/DIO/DIO_prg.o
-                0x000014d8                DIO_GetPortVal
+                0x00001556       0x84 ./MCAL/DIO/DIO_prg.o
+                0x00001556                DIO_GetPortVal
  .text.ultrasonic_init
-                0x0000155c       0x2a ./HAL/Ultrasonic-Sensor/Ultrasonic.o
-                0x0000155c                ultrasonic_init
+                0x000015da       0x2a ./HAL/Ultrasonic-Sensor/Ultrasonic.o
+                0x000015da                ultrasonic_init
  .text.ultrasonic_get_distance
-                0x00001586      0x232 ./HAL/Ultrasonic-Sensor/Ultrasonic.o
-                0x00001586                ultrasonic_get_distance
+                0x00001604      0x232 ./HAL/Ultrasonic-Sensor/Ultrasonic.o
+                0x00001604                ultrasonic_get_distance
  .text.motors_init
-                0x000017b8       0x3a ./HAL/Motor-Driver/Motor_Driver.o
-                0x000017b8                motors_init
+                0x00001836       0x4e ./HAL/Motor-Driver/Motor_Driver.o
+                0x00001836                motors_init
  .text.set_motor_speed
-                0x000017f2       0x44 ./HAL/Motor-Driver/Motor_Driver.o
-                0x000017f2                set_motor_speed
+                0x00001884       0x20 ./HAL/Motor-Driver/Motor_Driver.o
+                0x00001884                set_motor_speed
  .text.set_motor_direction
-                0x00001836       0xb2 ./HAL/Motor-Driver/Motor_Driver.o
-                0x00001836                set_motor_direction
+                0x000018a4       0xb2 ./HAL/Motor-Driver/Motor_Driver.o
+                0x000018a4                set_motor_direction
  .text.move_both_motors
-                0x000018e8       0x6c ./HAL/Motor-Driver/Motor_Driver.o
-                0x000018e8                move_both_motors
+                0x00001956       0x4e ./HAL/Motor-Driver/Motor_Driver.o
+                0x00001956                move_both_motors
  .text.stop_both_motors
-                0x00001954       0x1c ./HAL/Motor-Driver/Motor_Driver.o
-                0x00001954                stop_both_motors
+                0x000019a4       0x22 ./HAL/Motor-Driver/Motor_Driver.o
+                0x000019a4                stop_both_motors
  .text.IR_sensor_init
-                0x00001970       0x1c ./HAL/IR-Sensor/IR.o
-                0x00001970                IR_sensor_init
+                0x000019c6       0x1c ./HAL/IR-Sensor/IR.o
+                0x000019c6                IR_sensor_init
  .text.IR_sensor_read
-                0x0000198c       0x38 ./HAL/IR-Sensor/IR.o
-                0x0000198c                IR_sensor_read
+                0x000019e2       0x38 ./HAL/IR-Sensor/IR.o
+                0x000019e2                IR_sensor_read
  .text.gyroscope_init
-                0x000019c4        0xe ./HAL/Gyroscope/Gyroscope.o
-                0x000019c4                gyroscope_init
+                0x00001a1a        0xe ./HAL/Gyroscope/Gyroscope.o
+                0x00001a1a                gyroscope_init
  .text.read_gyroscope_data
-                0x000019d2       0x70 ./HAL/Gyroscope/Gyroscope.o
-                0x000019d2                read_gyroscope_data
+                0x00001a28       0x70 ./HAL/Gyroscope/Gyroscope.o
+                0x00001a28                read_gyroscope_data
  .text.encoder_init
-                0x00001a42       0x36 ./HAL/Encoder/Encoder.o
-                0x00001a42                encoder_init
+                0x00001a98       0x36 ./HAL/Encoder/Encoder.o
+                0x00001a98                encoder_init
  .text.read_encoder_position
-                0x00001a78       0xda ./HAL/Encoder/Encoder.o
-                0x00001a78                read_encoder_position
- .text.main     0x00001b52      0x18a ./APP/main.o
-                0x00001b52                main
- .text.libgcc   0x00001cdc       0x44 c:/users/acer/desktop/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
-                0x00001cdc                __udivmodsi4
- .text.libgcc   0x00001d20        0x0 c:/users/acer/desktop/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
- .text.libgcc   0x00001d20        0x0 c:/users/acer/desktop/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
- .text.libgcc   0x00001d20        0x0 c:/users/acer/desktop/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
- .text.libgcc   0x00001d20       0x38 c:/users/acer/desktop/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
-                0x00001d20                __prologue_saves__
- .text.libgcc   0x00001d58       0x36 c:/users/acer/desktop/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
-                0x00001d58                __epilogue_restores__
+                0x00001ace       0xda ./HAL/Encoder/Encoder.o
+                0x00001ace                read_encoder_position
+ .text.main     0x00001ba8      0x2ee ./APP/main.o
+                0x00001ba8                main
+ .text.libgcc   0x00001e96       0x28 c:/users/acer/desktop/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+                0x00001e96                __udivmodhi4
+ .text.libgcc   0x00001ebe       0x44 c:/users/acer/desktop/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+                0x00001ebe                __udivmodsi4
+ .text.libgcc   0x00001f02        0x0 c:/users/acer/desktop/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00001f02        0x0 c:/users/acer/desktop/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00001f02        0x0 c:/users/acer/desktop/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00001f02       0x38 c:/users/acer/desktop/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
+                0x00001f02                __prologue_saves__
+ .text.libgcc   0x00001f3a       0x36 c:/users/acer/desktop/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
+                0x00001f3a                __epilogue_restores__
  .text.avr-libc
-                0x00001d8e       0x2a c:/users/acer/desktop/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(printf.o)
-                0x00001d8e                printf
+                0x00001f70       0x2a c:/users/acer/desktop/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(printf.o)
+                0x00001f70                printf
  .text.avr-libc
-                0x00001db8      0x3ba c:/users/acer/desktop/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(vfprintf_std.o)
-                0x00001db8                vfprintf
+                0x00001f9a      0x3ba c:/users/acer/desktop/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(vfprintf_std.o)
+                0x00001f9a                vfprintf
  .text.avr-libc
-                0x00002172       0x16 c:/users/acer/desktop/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strnlen_P.o)
-                0x00002172                strnlen_P
+                0x00002354       0x16 c:/users/acer/desktop/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strnlen_P.o)
+                0x00002354                strnlen_P
  .text.avr-libc
-                0x00002188       0x16 c:/users/acer/desktop/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strnlen.o)
-                0x00002188                strnlen
+                0x0000236a       0x16 c:/users/acer/desktop/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strnlen.o)
+                0x0000236a                strnlen
  .text.avr-libc
-                0x0000219e       0x58 c:/users/acer/desktop/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(fputc.o)
-                0x0000219e                fputc
+                0x00002380       0x58 c:/users/acer/desktop/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(fputc.o)
+                0x00002380                fputc
  .text.avr-libc
-                0x000021f6       0xbc c:/users/acer/desktop/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(ultoa_invert.o)
-                0x000021f6                __ultoa_invert
-                0x000022b2                . = ALIGN (0x2)
+                0x000023d8       0xbc c:/users/acer/desktop/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(ultoa_invert.o)
+                0x000023d8                __ultoa_invert
+                0x00002494                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x000022b2        0x0 c:/users/acer/desktop/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
-                0x000022b2                exit
-                0x000022b2                _exit
+ .fini9         0x00002494        0x0 c:/users/acer/desktop/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x00002494                exit
+                0x00002494                _exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -441,11 +446,11 @@ LOAD c:/users/acer/desktop/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\l
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x000022b2        0x4 c:/users/acer/desktop/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .fini0         0x00002494        0x4 c:/users/acer/desktop/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x000022b6                _etext = .
+                0x00002498                _etext = .
 
-.data           0x00800060       0x1e load address 0x000022b6
+.data           0x00800060       0x1e load address 0x00002498
                 0x00800060                PROVIDE (__data_start, .)
  *(.data)
  .data          0x00800060        0x0 c:/users/acer/desktop/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
@@ -460,6 +465,7 @@ LOAD c:/users/acer/desktop/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\l
  .data          0x00800075        0x0 ./APP/Gyro.o
  .data          0x00800075        0x0 ./APP/Ultra.o
  .data          0x00800075        0x0 ./APP/main.o
+ .data          0x00800075        0x0 c:/users/acer/desktop/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
  .data          0x00800075        0x0 c:/users/acer/desktop/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
  .data          0x00800075        0x0 c:/users/acer/desktop/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
  .data          0x00800075        0x0 c:/users/acer/desktop/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
@@ -510,6 +516,7 @@ LOAD c:/users/acer/desktop/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\l
  .bss           0x0080007e        0x0 ./APP/Gyro.o
  .bss           0x0080007e        0x0 ./APP/Ultra.o
  .bss           0x0080007e        0x0 ./APP/main.o
+ .bss           0x0080007e        0x0 c:/users/acer/desktop/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
  .bss           0x0080007e        0x0 c:/users/acer/desktop/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
  .bss           0x0080007e        0x0 c:/users/acer/desktop/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
  .bss           0x0080007e        0x0 c:/users/acer/desktop/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
@@ -544,8 +551,8 @@ LOAD c:/users/acer/desktop/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\l
  COMMON         0x00800081        0x6 c:/users/acer/desktop/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(iob.o)
                 0x00800081                __iob
                 0x00800087                PROVIDE (__bss_end, .)
-                0x000022b6                __data_load_start = LOADADDR (.data)
-                0x000022d4                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x00002498                __data_load_start = LOADADDR (.data)
+                0x000024b6                __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x00800087        0x0
                 0x00800087                PROVIDE (__noinit_start, .)
@@ -570,33 +577,33 @@ LOAD c:/users/acer/desktop/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\l
 .signature
  *(.signature*)
 
-.stab           0x00000000     0x20a0
+.stab           0x00000000     0x2244
  *(.stab)
  .stab          0x00000000      0x3fc ./MCAL/TWI/TWI_prg.o
- .stab          0x000003fc      0x3fc ./MCAL/PWM/PWM.o
-                                0x408 (size before relaxing)
- .stab          0x000007f8      0x588 ./MCAL/DIO/DIO_prg.o
+ .stab          0x000003fc      0x444 ./MCAL/PWM/PWM.o
+                                0x450 (size before relaxing)
+ .stab          0x00000840      0x588 ./MCAL/DIO/DIO_prg.o
                                 0x744 (size before relaxing)
- .stab          0x00000d80      0x330 ./HAL/Ultrasonic-Sensor/Ultrasonic.o
+ .stab          0x00000dc8      0x330 ./HAL/Ultrasonic-Sensor/Ultrasonic.o
                                 0x4ec (size before relaxing)
- .stab          0x000010b0      0x408 ./HAL/Motor-Driver/Motor_Driver.o
-                                0x5c4 (size before relaxing)
- .stab          0x000014b8      0x1a4 ./HAL/IR-Sensor/IR.o
+ .stab          0x000010f8      0x3e4 ./HAL/Motor-Driver/Motor_Driver.o
+                                0x5a0 (size before relaxing)
+ .stab          0x000014dc      0x1a4 ./HAL/IR-Sensor/IR.o
                                 0x360 (size before relaxing)
- .stab          0x0000165c      0x2a0 ./HAL/Gyroscope/Gyroscope.o
+ .stab          0x00001680      0x2a0 ./HAL/Gyroscope/Gyroscope.o
                                 0x45c (size before relaxing)
- .stab          0x000018fc      0x378 ./HAL/Encoder/Encoder.o
+ .stab          0x00001920      0x378 ./HAL/Encoder/Encoder.o
                                 0x534 (size before relaxing)
- .stab          0x00001c74       0xd8 ./APP/Gyro.o
+ .stab          0x00001c98       0xd8 ./APP/Gyro.o
                                  0xe4 (size before relaxing)
- .stab          0x00001d4c       0xd8 ./APP/Ultra.o
+ .stab          0x00001d70       0xd8 ./APP/Ultra.o
                                  0xe4 (size before relaxing)
- .stab          0x00001e24      0x27c ./APP/main.o
-                                0x438 (size before relaxing)
+ .stab          0x00001e48      0x3fc ./APP/main.o
+                                0x5b8 (size before relaxing)
 
-.stabstr        0x00000000     0x125f
+.stabstr        0x00000000     0x124d
  *(.stabstr)
- .stabstr       0x00000000     0x125f ./MCAL/TWI/TWI_prg.o
+ .stabstr       0x00000000     0x124d ./MCAL/TWI/TWI_prg.o
 
 .stab.excl
  *(.stab.excl)
